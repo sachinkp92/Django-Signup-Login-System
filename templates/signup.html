@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center"> Signup Here</h1>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <div class="mb-3">
+            <label><b>User Name:</b></label>
+            <input type="text" name="username" class="form-control">
+        </div>
+            <div class="mb-3">
+            <label><b>User Email:</b></label>
+            <input type="email" name="email" class="form-control">
+        </div>
+            <div class="mb-3">
+            <label><b>User Password:</b></label>
+            <input type="password" name="password" class="form-control">
+        </div>
+        <input type="submit" name="signup" value="signup" class="btn btn-primary">
+            <a href="/login" class="btn btn-primary">login</a>
+
+        </form>
+</body>
+</html>
